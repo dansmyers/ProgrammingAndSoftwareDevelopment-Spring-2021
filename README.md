@@ -115,7 +115,7 @@ We'll have five kinds of assignments in this class:
 
 1. A set of **six programming assignments**. These will be done in Java using Eclipse and you'll have one due approximately every two weeks. Each assignment consists of questions that will require you to write Java programs.
 
-2. **Five short quizzes** that will be taken **in class** on the days specified on the calendar.
+2. **Five short quizzes** that will be taken **in class** on the days specified on the calendar. The quizzes are **open note**.
 
 3. A **final project**, which we'll start and work on in class during the last two weeks of the semester.
 
