@@ -64,7 +64,7 @@ We will use [Eclipse](https://www.eclipse.org/) for our programming assignments 
 |January 28|    The `if` statement | Assignment 1 due|
 |February 2|    Adding randomness to your programs ||
 |February 4|    Intro to arrays |Quiz 1|
-|February 9|    Using arrays for data analysis ||
+|February 9|    Two-dimensional arrays ||
 |February 11|   More on the `for` loop |Assignment 2 due|
 |February 16|   The `while` loop ||
 |February 18|   Writing static methods |Quiz 2|
