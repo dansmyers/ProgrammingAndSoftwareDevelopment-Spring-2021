@@ -65,7 +65,7 @@ We will use [Eclipse](https://www.eclipse.org/) for our programming assignments 
 |February 2|    Adding randomness to your programs ||
 |February 4|    Intro to arrays |Quiz 1|
 |February 9|    Two-dimensional arrays ||
-|February 11|   More on the `for` loop |Assignment 2 due|
+|February 11|   The `for` loop and using arrays for data analysis |Assignment 2 due|
 |February 16|   The `while` loop ||
 |February 18|   Writing static methods |Quiz 2|
 |February 23|   Method writing practice ||
