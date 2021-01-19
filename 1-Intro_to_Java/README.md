@@ -1,7 +1,6 @@
-# Sprint 1 &ndash; Intro to Java
+#  Intro to Java
 
-## Starts Monday 9/14
-## Deliverables and quiz are due on Wednesday 9/30
+## Assignment due Thursday, January 28
 
 ## Overview and Goals
 
