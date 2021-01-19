@@ -1,33 +1,30 @@
 #  Intro to Java
 
 ## Assignment due Thursday, January 28
+## First quiz on February 4
 
 ## Overview and Goals
 
-This is it: the first sprint. We're going to do three things:
+This is it: the first unit. We're going to focus on two things:
 
-1. Get comfortable with the rhythms and practice of Scrumage.
-2. Review the important elements of structured programming using Java.
-3. Develop an appreciation for the ways that Java and Python are alike...and yet different.
+1. Review the important elements of structured programming using Java.
+2. Develop an appreciation for the ways that Java and Python are alike...and yet different.
 
-At the end of the sprint, you'll have four things to complete:
+At the end of the unit, you'll have four things to complete:
 
 1. The deliverables described in this project.
 2. An individual quiz.
-3. A short individual reflective write-up.
-4. Reading from the ZyBook.
+3. Reading from the ZyBook.
 
-The content for this sprint will primarily be review from your previous class, although you will need to get started with Java, which may be new for you. As you're working,
-focus on getting into the rhythm of Scrumage and developing good working habits with your teams that will carry you through the more content-heavy sprints that are coming up.
+The content for this unit will primarily be review from your previous class, although you will need to get started with Java, which may be new for you.
+
 
 ## Deliverables and Quiz
 
-Complete the five problems in `Deliverables`. Remember that you may work freely with the members of your team and you may use any resources that you find helpful to
-complete the project. Put each program into its own `.java` file, then put all of your files into a ZIP archive and submit them through the assignment posted to Canvas.
+Complete the five problems in `Deliverables`. Put each program into its own `.java` file, then put all of your files into a ZIP archive and submit them through the assignment posted to Canvas. I will show you how to add your files to a ZIP in class.
 
-The quiz and reflective write-up will be done **online** on **Wednesday, September 30**, which will also be the release day for the next sprint's material. The quiz will be 
-**individual** (not team) but will be **open everything**: you can use the sprint resources, your notes, and online resources. Remember to abide by the Honor Code 
-and ask me if you have questions about what is an acceptable resource.
+The quiz will be done **during class** on February 4. It is **open everything**: You can use any resources that you bring with you and find helpful.
+
 
 ## Reading
 
@@ -57,22 +54,10 @@ At the end of this sprint, you should be comfortable with the following Java fea
 
 - Using `Math.random()` to make random choices.
 
-## Schedule and Tips
 
-We will work through examples and answer questions every day in class. In addition to the class work, the following schedule will help your groups stay on track.
-
-- **Week 1**: Work through the first and second sets of examples in the `Examples` directory. I recommend re-implementing each example by hand, paying attention to the notes
-that I've given you that point out features of each program. Complete the ZyBooks reading for Chapter 2.
-
-- **Week 2**: Work through the third set of examples on user input and the `Scanner`. Pay carefuly attention to the `InchesToCentimeters` example, which is a basic template for
-writing unit conversion programs with user input. After doing that, you should be able to complete the first three deliverable problems. Start working on Chapter 3 in the ZyBook.
-
-- **Week 3**: Finish the last two deliverable problems. The RPS problem is the more involved of the two, but gives you step-by-step instructions. Finish Chapter 3 of the ZyBook.
-
-As you're working, remember:
-
-- You're allowed to work collaboratively with members of your group and you can use any other online resources that you find useful.
+## Tips
 
 - **Don't wait until the last minute**. You won't have enough time to finish everything.
 
+- **Remember the Honor Code** and my guidelines for acceptable collaboration.
 
