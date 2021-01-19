@@ -1,6 +1,6 @@
 #  Intro to Java
 
-## Assignment due Thursday, January 28
+## Assignment and reading due Thursday, January 28
 ## First quiz on February 4
 
 ## Overview and Goals
