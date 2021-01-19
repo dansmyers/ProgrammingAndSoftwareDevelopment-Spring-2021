@@ -330,3 +330,4 @@ Everyone	is	protected	under	the	following	protected	statuses:	sex	(including
 pregnancy),	gender,	gender	identity	(including	transgender	status),	gender	
 expression,	and	sexual	orientation.	For	information,	
 visit https://www.rollins.edu/sexual-misconduct/
+
