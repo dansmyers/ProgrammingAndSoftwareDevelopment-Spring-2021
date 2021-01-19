@@ -59,30 +59,30 @@ We will use [Eclipse](https://www.eclipse.org/) for our programming assignments 
 | Day | Topic  |  Assignments |
 |------|---------|-------------|
 |January 19|    Hello, Java! | |
-|January 21|    Variables and types ||
-|January 26|    Reading input with `Scanner` |  |
-|January 28|    The `if` statement | Assignment 1 due|
-|February 2|    Adding randomness to your programs ||
-|February 4|    Intro to arrays |Quiz 1|
-|February 9|    Two-dimensional arrays ||
-|February 11|   The `for` loop and using arrays for data analysis |Assignment 2 due|
-|February 16|   The `while` loop ||
-|February 18|   Writing static methods |Quiz 2|
-|February 23|   Method writing practice ||
-|February 25|   Local variables and scope |Assignment 3 due|
-|March 2|       Intro to recursion||
-|March 4|       Recursion example: Towers of Hanoi |Quiz 3|
-|March 9|       Testing your methods ||
-|March 11|      Objects and classes |Assignment 4 due|
+|January 21|    Variables, types, input with `Scanner` ||
+|January 26|    The `if` statement |  |
+|January 28|    Intro to arrays | Assignment 1 due|
+|February 2|    Two-dimensional arrays ||
+|February 4|    The `for` loop and looping over arrays |Quiz 1|
+|February 9|    The `while` loop ||
+|February 11|   Writing static methods |Assignment 2 due|
+|February 16|    Method writing practice ||
+|February 18|    Local variables and scope |Quiz 2|
+|February 23|    Intro to recursion ||
+|February 25|    Recursion example: Towers of Hanoi |Assignment 3 due|
+|March 2|        Recursive string and array examples ||
+|March 4|        Testing your methods |Quiz 3|
+|March 9|       Objects and classes  ||
+|March 11|      Writing classes that have data |Assignment 4 due|
 |March 16|      Break (no class)||
-|March 18|      Writing classes that have data |Quiz 4|
-|March 23|      Writing classes that have methods ||
-|March 25|      Class writing practice |Assignment 5 due|
-|March 30|      `String` methods ||
-|April 1|       Working with files |Quiz 5 |
-|April 6|       `ArrayList` ||
-|April 8|       `ArrayList` implementation |Assignment 6 due|
-|April 13|      `HashMap` ||
+|March 18|      Writing classes that have methods |Quiz 4|
+|March 23|      Classes writing practice ||
+|March 25|      Working with strings and files |Assignment 5 due|
+|March 30|      More strings and files ||
+|April 1|       `ArrayList` |Quiz 5 |
+|April 6|       `ArrayList` implementation ||
+|April 8|        `HashMap` |Assignment 6 due|
+|April 13|      Combining data structures ||
 |April 15|      Project: A Music Recommendation Engine ||
 |April 20|      Recommendation Engine II ||
 |April 22|      Recommendation Engine III ||
