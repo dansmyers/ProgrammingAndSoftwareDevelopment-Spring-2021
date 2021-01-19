@@ -47,7 +47,7 @@ At the end of this course, you will be able to:
 
 We will use an online ZyBook covering Java. The text includes built-in problems that you will complete along with the assigned homework projects. In most cases, the questions for each book chapter will be due at the same time as a programming project.
 
-To access the text, create an account on the ZyBooks site, https://learn.zybooks.com. Enter the ZyBook code: ROLLINSCMS121MyersSpring2021. The subscription is $88 and lasts until after the final exam.
+To access the text, create an account on the ZyBooks site, https://learn.zybooks.com. Enter the ZyBook code: ROLLINSCMS121MyersSpring2021. The subscription is $88 and lasts until after the end of the semester.
 
 We will use [Eclipse](https://www.eclipse.org/) for our programming assignments and lab activities. Eclipse is an industry standard **integrated development environment** (IDE) for Java.
 
@@ -107,8 +107,6 @@ Rather than calculating your score as number of points on a 0-100 scale, your gr
 
 If you achieve satisfactory performance on enough assigments, described in more detail below, you'll receive a baseline grade of **B** for the course. This demonstrates that you have engaged with the material and met the basic learning outcomes for the class. To get a higher grade, you can do more work that shows greater mastery of the course learning outcomes.
 
-### Labs
-You must be registered for a section of CMS 120L. You'll receive the **same grade** for both CMS 120 and CMS 120L.
 
 ### Assignments
 We'll have five kinds of assignments in this class:
