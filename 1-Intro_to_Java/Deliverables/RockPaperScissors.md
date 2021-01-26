@@ -120,7 +120,18 @@ Remember that the `return` statement automatically ends the `main` method, which
 
 ## Step 6: Randomly Generate the CPU's Move
 
-Use `Math.random()` to generate a 1, 2, or 3 and save it into a variable named `cpuMove`.
+Use `Math.random()` to generate a 1, 2, or 3 and save it into a variable named `cpuMove`. The easiest way to do this is to use an `if`-`else if`-`else` block with three choices:
+
+```
+int cpuMove;
+double r = Math.random();
+
+if (r < .3333) {
+    cpuMove = ROCK;
+}
+
+// Add two other cases for PAPER and SCISSORS
+```
 
 ## Step 7: Print the CPU's Move
 
