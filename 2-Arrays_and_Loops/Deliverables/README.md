@@ -148,3 +148,27 @@ A **magic square** is a square matrix where all rows, columns, and diagonals sum
 4 x 4 magic square with sum 34.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Albrecht_D%C3%BCrer_-_Melencolia_I_%28detail%29.jpg" width="50%" />
+
+There are a number of methods, some of ancient origin, for generating magic squares. [The Wikipedia article has extensive information](https://en.wikipedia.org/wiki/Magic_square). The most well-known is called the **Siamese method**. It was brought to Europe by the French diplomat
+Simon de la Loubère in 1688 who learned of it during his trip as an ambassador to the Kingdom of Siam. The method probably originated in India and 
+De la Loubère returned from Siam with documents describing other aspects of Indian science, including methods of astronomy. Again, [Wikipedia has you
+covered](https://en.wikipedia.org/wiki/Siamese_method) if you want more details.
+
+The Siamese method generates an *n* x *n* magic square where *n* is odd. By default, the square is filled with the numbers from 1 to *n*<sup>2</sup>.
+
+The method proceeds as follows:
+
+1. Initialize the empty *n* x *n* square.
+
+2. Start in the center of the top row and place a 1 there.
+
+3. Move **up and to the right** to find the next square to fill. If moving up and to the right moves you off of the grid, wrap around to the other side.
+
+4. If moving up and to the right would cause you to land on a square that is already occupied, move down by one square instead of moving up and right.
+
+5. Continue this process, placing the numbers in sequential order until the entire square is filled.
+
+Here is the illustration of the 3 x 3 square:
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/SiameseMethod.gif" width="50%" />
+
