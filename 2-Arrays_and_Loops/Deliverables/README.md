@@ -237,4 +237,9 @@ public class MagicSquares {
 
 ```
 
+## Treblecross
 
+**Treblecross** is a one-dimensional tic-tac-toe variant. It is played on a line of *n* squares and both players use X as the only mark. The object is to be the first player
+to complete a grouping of three X's:
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Treblecross.svg/440px-Treblecross.svg.png" width="20%" />
