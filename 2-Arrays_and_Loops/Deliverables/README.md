@@ -224,11 +224,17 @@ public class MagicSquares {
         
             // Place value i at square[row][col]
         
-            // 
+            // Try to move up and right, wrapping around if you need to
+            
+            // If that position is occupied, go back to the old location and move down instead
             
         }
+        
+        // Print the final magic square
         
     }
 }
 
 ```
+
+
