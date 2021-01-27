@@ -140,6 +140,8 @@ public class SubtractionGame {
 
 ## Magic Squares
 
+### Description
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/D%C3%BCrer_Melancholia_I.jpg/1280px-D%C3%BCrer_Melancholia_I.jpg" width="50%" />
 
 Albrecht Dürer, *Melancholia I*, 1514
@@ -150,8 +152,9 @@ A **magic square** is a square matrix where all rows, columns, and diagonals sum
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Albrecht_D%C3%BCrer_-_Melencolia_I_%28detail%29.jpg" width="33%" />
 
 There are a number of methods, some of ancient origin, for generating magic squares. [The Wikipedia article has extensive information](https://en.wikipedia.org/wiki/Magic_square). The most well-known is called the **Siamese method**. It was brought to Europe by the French diplomat
-Simon de la Loubère in 1688 who learned of it during his trip as an ambassador to the Kingdom of Siam. The method probably originated in India and 
-De la Loubère returned from Siam with documents describing other aspects of Indian science, including methods of astronomy. Again, [Wikipedia has you
+Simon de la Loubère in 1688 who learned of it during his trip as an ambassador to the Kingdom of Siam. The method probably originated in India; 
+De la Loubère returned from Siam with documents describing other aspects of Indian science, including some of the first information on Indian
+astronomy ever brought to Europe. Again, [Wikipedia has you
 covered](https://en.wikipedia.org/wiki/Siamese_method) if you want more details.
 
 The Siamese method generates an *n* x *n* magic square where *n* is odd. By default, the square is filled with the numbers from 1 to *n*<sup>2</sup>.
@@ -185,3 +188,47 @@ Here is an explanation of the first five steps:
 5. Move up and right from the 4 square to place 5 in the center position.
 
 And so forth.
+
+### Code
+
+Complete the program below to implement the Siamese method for constructing magic squares. Your program should read the number *n* as input, then initialize an *n* by *n*
+matrix to hold the square.
+
+```
+/**
+ * Magic squares
+ *
+ * CMS 121
+ */
+ 
+import java.util.Scanner;
+ 
+public class MagicSquares {
+
+    public static void main(String[] args) {
+
+        // Create a Scanner and read n from the terminal
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a value of n: ");
+        int n = input.nextInt();
+
+        // Initialize an n x n array of int
+        int[][] square = 
+        
+        // Start in the top row, center column
+        int row = 0;
+        int col = n / 2;  // Integer division yields the correct column
+        
+        // Place the values from 1 to n ^ 2
+        for (int i = 1; i <= n * n; i++) {
+        
+            // Place value i at square[row][col]
+        
+            // 
+            
+        }
+        
+    }
+}
+
+```
