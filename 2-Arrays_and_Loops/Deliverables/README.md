@@ -147,7 +147,7 @@ Albrecht Dürer, *Melancholia I*, 1514
 A **magic square** is a square matrix where all rows, columns, and diagonals sum to the same value. For example, the Dürer etching shown above includes the following
 4 x 4 magic square with sum 34.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Albrecht_D%C3%BCrer_-_Melencolia_I_%28detail%29.jpg" width="50%" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Albrecht_D%C3%BCrer_-_Melencolia_I_%28detail%29.jpg" width="33%" />
 
 There are a number of methods, some of ancient origin, for generating magic squares. [The Wikipedia article has extensive information](https://en.wikipedia.org/wiki/Magic_square). The most well-known is called the **Siamese method**. It was brought to Europe by the French diplomat
 Simon de la Loubère in 1688 who learned of it during his trip as an ambassador to the Kingdom of Siam. The method probably originated in India and 
@@ -170,5 +170,18 @@ The method proceeds as follows:
 
 Here is the illustration of the 3 x 3 square:
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/SiameseMethod.gif" width="50%" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/SiameseMethod.gif" width="33%" />
 
+Here is an explanation of the first five steps:
+
+1. Place a 1 in the center of the top row.
+
+2. Move up and to the right, wrapping around to the bottom to place 2 in the lower-right square.
+
+3. Move up and to the right, wrapping around to the left side to place 3 in the middle-left position.
+
+4. Moving up and to the right from the 3 square would land on the 1 square, so move down one square instead and place 4 in the bottom left square.
+
+5. Move up and right from the 4 square to place 5 in the center position.
+
+And so forth.
