@@ -211,6 +211,8 @@ public class MagicSquares {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a value of n: ");
         int n = input.nextInt();
+        
+        // n must be odd and positive; if it isn't, quit immediately
 
         // Initialize an n x n array of int
         int[][] square = 
@@ -237,9 +239,84 @@ public class MagicSquares {
 
 ```
 
+
+### Specifications
+
+To get full credit for this program, you code must do the following:
+
+- Prompt for and read *n*, the size of the square.
+- Exit immediately if *n* is negative or even.
+- Successfully construct the squares with inputs of *n* = 3 and *n* = 5.
+- Print the final square with reasonable formatting before exiting.
+
 ## Treblecross
 
-**Treblecross** is a one-dimensional tic-tac-toe variant. It is played on a line of *n* squares and both players use X as the only mark. The object is to be the first player
+**Treblecross** is a one-dimensional tic-tac-toe variant. Both players take turns marking X's on a line of *n* squares. The object is to be the first player
 to complete a grouping of three X's:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Treblecross.svg/440px-Treblecross.svg.png" width="20%" />
+
+Finish the implementation of Treblecross given below. Your program should
+
+- Prompt for the size of the playing array
+- Quit if the input value is negative.
+- Print the board and read input on each turn.
+- Successfully alternate between the two players.
+- Detect the three winning conditions and declare the appropriate player the winner.
+
+```
+/**
+ * Treblecross
+ */
+
+import java.util.Scanner;
+
+public class Treblecross {
+
+    public static void main(String[] args) {
+    
+        // Create a Scanner and get an input value of n
+        
+        // If n is negative, quit the program immediately
+        
+        // Create a 1-D array of n char
+        
+        // Use a variable to keep track of the current player
+        int player = 1;
+        
+        // Use a while loop to play until the game is complete
+        boolean playing = true;
+        while (playing) {
+        
+            // Print the current board
+            
+            // Ask the current player to choose an open position
+            
+            // Read the player's move using the Scanner
+            
+            // If that square is occupied, use a continue statement to repeat the loop
+            
+            // Mark the position
+            
+            // Check if the new move resulted in three in a line
+            //
+            // There are three ways this can happen:
+            //     the new X is the left most of a group of three
+            //     the new X is in the middle of a group of three
+            //     the new X is on the right of a group of three
+            
+            // If so, declare the current player the winner and set playing = false
+                        
+            // In all other cases, switch to the other player
+            // Here's a fancy way of switching using the mod operation
+            // 1 % 2 + 1 ---> 2
+            // 2 % 2 + 1 ---> 1
+            player = (player % 2) + 1;
+            
+            
+        }
+    
+    }
+
+}
+```
