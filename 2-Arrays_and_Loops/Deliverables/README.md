@@ -2,7 +2,7 @@
 
 ## I Would Like to Say a Few Words
 
-Write a program that uses a loop to prompt the user to enter a `String`. Keep prompting until the user types one of the following words:
+Write a program that uses a `while` loop to prompt the user to enter a `String`. Keep prompting until the user types one of the following words:
 
 ```
 nitwit
