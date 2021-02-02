@@ -91,7 +91,9 @@ Tip: Use an outer loop that iterates over each level of the stairs. Then use an 
 print a block without going to the next line.
 
 ```
-for (int level = 0; level < height; level++) {
+int height = 10;
+
+for (int level = 1; level <= height; level++) {
 
     // Use an inner loop to print level + 1 blocks on this line
     
