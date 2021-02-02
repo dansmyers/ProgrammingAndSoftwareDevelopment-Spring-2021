@@ -21,6 +21,8 @@ Add another loop to your program to find the maximum element of the array. Use a
 
 ## FizzBuzz
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotf_0BVD65WuId_eRFnmAFAXFFB3cGVGs-g&usqp=CAU" width="35%" />
+
 One of the all-time classic programming interview questions originally created by Imran Gohry.
 
 Print the numbers from 1 to 100, except
