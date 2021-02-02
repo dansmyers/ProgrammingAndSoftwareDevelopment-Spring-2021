@@ -63,6 +63,14 @@ for (int i = 1; i < 101; i++) {
 }
 ```
 
+Tip: Remember that you can use the modulus operator, `%`, to test for divisibility. For example, to test if `i` is divisible by 3 and 5 use:
+
+```
+if (i % 3 == 0 && i % 5 == 0) {
+
+}
+```
+
 ## Descending a Staircase
 
 Write a program that uses a loop to print a descending staircase of blocks like the following:
