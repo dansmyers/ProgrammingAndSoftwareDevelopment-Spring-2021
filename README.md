@@ -62,8 +62,8 @@ We will use [Eclipse](https://www.eclipse.org/) for our programming assignments 
 |January 21|    Variables, types, input with `Scanner` ||
 |January 26|    The `if` statement |  |
 |January 28|    Intro to arrays | Assignment 1 due|
-|February 2|    Two-dimensional arrays ||
-|February 4|    The `for` loop and looping over arrays |Quiz 1|
+|February 2|    The `for` loop and looping over arrays ||
+|February 4|    Two-dimensional arrays |Quiz 1|
 |February 9|    The `while` loop ||
 |February 11|   Writing static methods |Assignment 2 due|
 |February 16|    Method writing practice ||
