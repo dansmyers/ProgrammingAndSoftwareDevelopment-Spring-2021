@@ -160,16 +160,22 @@ This project will let you practice:
 
 ### Specifications
 
-- Correct, well-formatted printouts of the game board
-- Reading user input from the console
-- Checking for valid input and prompting the user to retry until a valid response is received
-- Marking the board with X's
-- Identifying the losing condition in a row, column, or diagonal and printing an appropriate response
+This entire project is worth **six points**. You will earn one point for each of the following criteria.
 
-If your program plays correctly, you'll get full credit for the project.
+- Formatted printout of the game board, using the format shown below.
+- Reading user input from the console; use a `while` loop to retry until the user inputs a valid number.
+- Converting the user's input number into a position in the board and marking that position as `true` or `false`
+- Identifying the losing condition of three X's in a row.
+- Identifying the losing condition of three X's in a column.
+- Identifying the losing condition of three X's in a diagonal.
 
+You must also include JavaDoc-style comments for each method.
 
-### Variables
+### Tips
+
+**Work in small phases**. Don't try to code the entire game in one step. Implement one small piece at a time, test it, and move on to the next piece only when things are working correctly.
+
+#### Variables
 
 The board is a 3x3 grid of `boolean` values.
 
@@ -177,13 +183,11 @@ The board is a 3x3 grid of `boolean` values.
 boolean[][] board = new boolean[3][3]
 ```
 
-Using booleans is appropriate because each position can have only two values: open or marked with an X.
+Using booleans is appropriate because each position can have only two values: open or marked with an X. You'll also need to create a `Scanner` to read input from the terminal.
 
-You'll also need to create a `Scanner` to read input from the terminal.
+#### Printing the Board
 
-### Printing and Input
-
-Print the current game board on each turn. Use the following format.
+Call the `print` method to print the current game board at the beginning of each turn. Use the following format.
 
 ```
  1 | 2 | 3
@@ -203,21 +207,122 @@ The user will enter one of the numbers 1-9 to select the location of the next X.
  7 | 8 | X
 ```
 
-Spots that have been filled can't be selected again. Use a loop to force the use to enter a valid location.
+Here is some example code to help you get started with `print`. It loops over the two-d grid and prints either an `X` at each position (if the value at that position
+is `true`) or a number 1-9 (calculated from the values of the loop index variables `r` and `c`). You will need to modify this method to make it print with the format
+shown above.
 
-### Turns
+```
+/**
+ * Print the board
+ * 
+ * @param  board  the 3x3 Notakto board
+ */
+public static void print(boolean[][] board) {
+    for (int r = 0; r < board.length; r++) {
+        for (int c = 0; c < board[r].length; c++) {
+            if (board[r][c]) {
+                System.out.print("X");
+            } else{
+                System.out.println(r * 3 + c + 1);
+            }
+        }
+        
+        System.out.println();
+    }
+}
 
-Use a variable to keep track of the current player. Both players use the same logic, but **don't** create two huge blocks of 
-nearly identical code. Use one main game loop and change the player variable on each iteration.
+```
 
-## Tips
+#### Valid Input
 
-**Work in small phases**. Don't try to code the entire game in one step. Implement one small piece at a time, test it, and move on to the next piece only when things are working correctly.
+You need to read the user's move as a number 1-9. If the user enters an invalid number or tries to choose a square that is already occupied, use a `while` loop to force
+another choice. Here is an example. The `covertToRow` and `convertToCol` methods take the user's choice 1-9 and turn it into the corresponding row or column number, as
+discussed below.
 
-Start by creating the main game loop in the `play` method, then fill in the other methods one at a time:
+```
+boolean readingInput = true;
 
-- `print` to print the board
+while (readingInput) {
+    System.out.println("Choose an open position.");
+    int choice = input.nextInt();
+    
+    if (choice < 1 or choice > 9) {
+        System.out.println("That is not a valid choice.");
+        continue;
+    }
+    
+    int row = convertToRow(choice);
+    int col = convertToCol(choice);
+    
+    if (board[row][col] == false) {
+        readingInput = false;
+    } else {
+        print a message saying that space is occupied
+    }
+}
+```
 
-- `readMove` to prompt the user for a location
+#### `covertToRow` and `converToCol`
 
-- Add other methods to check for a line of X's in a row, column, or diagonal
+These two methods take an `int` value 1-9 as input and return the corresponding row or column number.
+```
+/**
+ * Convert a position 1-9 into the corresponding row number
+ *
+ * @param  position   the user's choice, which must be 1-9
+ * @return            the row associated with that position
+ */
+public static int convertToRow(int position) {
+
+     // Positions 1, 2, 3 are on the first row of the board
+     if (position <= 3) {
+         return 0;
+     }
+     
+     // Positions 4, 5, and 6 are on the second row
+     else if (position <= 6) {
+     
+     } 
+     
+     // Positions 7, 8, 9 are on the third row
+     else {
+     
+     }
+}
+```
+
+It's also possible to directly calculate the row from the position number by taking advantage of integer division.
+
+```
+int row = (position - 1) / 3
+```
+
+You'll need to write a similar method for `convertToCol`.
+
+#### Checking the Losing Condition
+
+The three `check` methods all look for three consecutive X's and return `true` or `false`. For example, to check the rows you could write:
+
+```
+public static void checkRows(board) {
+
+    // Loop over the rows and check each one for three X's
+    for (int r = 0; r < board.length; r++) {
+        if (board[r][0] && board[r][1] && board[r][2]) {
+            return true;
+        }
+    }
+    
+    // If you complete the loop then no row can have three X's -- return false
+    return false;
+}
+```
+
+This code uses a loop to check each row. If all of the entries in a row are `true`, the method passes the check and returns `true`. If you complete the loop, then you must
+have checked all three rows without ever finding a group of three, so the method returns `false`.
+
+Write similar methods for `checkCols` and `checkDiags`.
+
+#### Turns
+
+As in the previous games, use a `player` variable to keep track of the current player's turn. Switch this variable to the other player at the end of the main game loop.
