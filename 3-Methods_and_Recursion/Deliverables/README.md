@@ -21,9 +21,6 @@ Tips:
 
 ### The Collatz Sequence
 
-<img src="https://imgs.xkcd.com/comics/collatz_conjecture.png" width="30%" />
-
-
 Given an arbitrary positive starting integer `n`, it's possible to create a sequence by repeatedly applying the following rules:
 
 ```
@@ -77,8 +74,6 @@ public static int collatz(int n) {
 
 
 ### Negative Fibonacci Numbers
-
-<img src="https://i.imgflip.com/17jtll.jpg" width="30%" />
 
 Recall the definition of the Fibonacci sequence:
 
