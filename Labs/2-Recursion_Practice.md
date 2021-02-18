@@ -53,13 +53,9 @@ You can move only one disk at a time and you can never place a larger disk on to
 
 Use this online version to play a few games of the Towers of Hanoi: https://www.mathsisfun.com/games/towerofhanoi.html.
 
-- How many moves does it take to solve the puzzle of two disks?
+- Solve the puzzle for two disks. How many moves does it take? Write down the sequence of moves.
 
-- How many moves for three disks?
-
-- How about four disks?
-
-The app will actually tell you the minimum number of moves in each case. As you solve the puzzle, keep track of the sequence of moves that generates the minimal value.
+- Repeat for three and then four disks. In each case, write down the sequence of steps that gives you the minimal number of moves.
 
 
 
