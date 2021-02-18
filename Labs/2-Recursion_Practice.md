@@ -12,7 +12,7 @@ an (*n* - 1) x (*n* - 1) square of stones for the second level, and so forth, un
 Write a **recursive function** called `stones` that takes a positive integer *n* as input and calculates the total number of stones in an *n*-level ziggurat.
 For example, a four-level structure has
 
-4<sup>2<sup> + 3<sup>2<sup> + 2<sup>2<sup> + 1 = 30
+4<sup>2</sup> + 3<sup>2</sup> + 2<sup>2</sup> + 1 = 30
 
 total stones.
 
