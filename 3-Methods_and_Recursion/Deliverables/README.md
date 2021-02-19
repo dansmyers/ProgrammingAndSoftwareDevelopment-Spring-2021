@@ -106,7 +106,7 @@ fib(-4) = fib(-2) - fib(-3) = -3
 
 The negative side of the sequence has the same values as the positive side, but offset by 1 and with alternating signs.
 
-Complete the method `fib(n)` which finds the `n`th Fibonacci number. Your method has to work for both postiive and negative values of
+Complete the method `fib(n)` which finds the `n`th Fibonacci number. Your method has to work for both positive and negative values of
 `n`.
 
 ### McCarthy's 91 Function
