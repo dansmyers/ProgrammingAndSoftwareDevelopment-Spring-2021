@@ -66,26 +66,26 @@ We will use [Eclipse](https://www.eclipse.org/) for our programming assignments 
 |February 4|    Two-dimensional arrays |Quiz 1|
 |February 9|    The `while` loop ||
 |February 11|   Writing static methods |Assignment 2 due|
-|February 16|    Method writing practice ||
-|February 18|    Local variables and scope |Quiz 2|
-|February 23|    Intro to recursion ||
-|February 25|    Recursion example: Towers of Hanoi |Assignment 3 due|
-|March 2|        Recursive string and array examples ||
-|March 4|        Testing your methods |Quiz 3|
-|March 9|       Objects and classes  ||
-|March 11|      Writing classes that have data |Assignment 4 due|
+|February 16|    Intro to recursion ||
+|February 18|    Recursion practice |Quiz 2|
+|February 23|    Memory, the stack, and local variables ||
+|February 25|    Testing methods + Intro to objects and classes |Assignment 3 due|
+|March 2|        Writing classes that have data ||
+|March 4|        Writing classes that have methods |Quiz 3|
+|March 9|        Class writing practice ||
+|March 11|      Working with files + Dealing with exceptions |Assignment 4 due|
 |March 16|      Break (no class)||
-|March 18|      Writing classes that have methods |Quiz 4|
-|March 23|      Classes writing practice ||
-|March 25|      Working with strings and files |Assignment 5 due|
-|March 30|      More strings and files ||
-|April 1|       `ArrayList` |Quiz 5 |
-|April 6|       `ArrayList` implementation ||
-|April 8|        `HashMap` |Assignment 6 due|
-|April 13|      Combining data structures ||
-|April 15|      Project: A Music Recommendation Engine ||
-|April 20|      Recommendation Engine II ||
-|April 22|      Recommendation Engine III ||
+|March 18|      Java data structures: `ArrayList` and its implementation |Quiz 4|
+|March 23|      Java data structures: `HashMap` ||
+|March 25|      Project: A Compleat Shakespearean Search Engine |Assignment 5 due|
+|March 30|       The Web + HTML/CSS ||
+|April 1|        Spring Boot |Quiz 5 |
+|April 6|       Spring Boot II ||
+|April 8|      Fully operational search engine ||
+|April 13|      Project: A Music Recommendation Engine |Assignment 6 due|
+|April 15|      Recommendation engine II ||
+|April 20|      Recommendation engine III ||
+|April 22|      Recommendation engine IV ||
 |April 26| Last day of classes | All challenge projects due (no meeting)
 
 
