@@ -9,7 +9,7 @@ public class StringRecursion {
      * Test if the input string is a palindrome
      * 
      * @param    s    Input String
-     * @return   true if s is a palindrome, false otherwise
+     * @return   The reverse of s
      */
     public static boolean isPalindrome(String s) {
     
