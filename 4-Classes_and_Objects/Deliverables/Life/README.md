@@ -14,12 +14,9 @@ The Game of Life is not a competition; rather, it’s a simulation of an idealiz
 The universe of Life is an infinite two-dimensional grid of cells. At each moment in time, a cell is either **alive** or **dead**. Each cell has eight neighbors: the cells to its left, right, top, bottom, and to its four corners. At each step in time, cells change state from alive to dead or vice versa based on the following rules:
 
 - A living cell that has fewer than two living neighbors dies from isolation
-
-- A living cell that has two or three living neighbors remains alive into the next iteration
-
 - A living cell with more than three living neighbors dies from overcrowding
-
-- A dead cell with exactly three live neighbors comes to life
+- A living cell that has two or three living neighbors remains alive into the next generation
+- A dead cell with exactly three live neighbors comes to life in the next generation
 
 All births and deaths happen **simultaneously**.
 
@@ -27,16 +24,33 @@ All births and deaths happen **simultaneously**.
 
 *Graphic from [Brandon Foltz's page at Temple](http://cis-linux2.temple.edu:8080/SP18_3344_tuh35975/02_advLayout/index.html#info).
 
-## Example
+## Play Around
+
+Go to the following page, which is a web-based implementation of Life:
+
+https://playgameoflife.com/lexicon/bi-block_puffer
+
+- Click on *Explanation* for a review of the rules.
+
+- *Lexicon* contains an extensive collection of patterns and terms developed by the Life community. You can click on any pattern graphic to load it into the window.
+
+- Use the controls at the bottom of the page to change the speed or zoom in and out on the pattern. Many of the spaceship patterns, like the bi-block puffe above, look best
+if you run them relatively fast and zoomed out.
+
+- You can also draw on the window to add new cells, then run the program to see how your configuration evolves.
+
+## Detailed Example
 
 Consider the following 3x3 grid. Assume that cells marked 0 are dead and cells marked 1 are alive.
 
 ```
-0  0  0
-
-1  1  1
-
-0  0  0
+-------------
+| 0 | 0 | 0 |
+-------------
+| 1 | 1 | 1 |
+-------------
+| 0 | 0 | 0 |
+-------------
 ```
 
 We'd like to apply the rules of Life to update this grid to the next state.
@@ -54,11 +68,13 @@ that lie outside the grid, are dead.
 Updates to the other cells are similar. If you want to represent the number of living neighbors in a grid, it would look like the following:
 
 ```
-2  3  2
-
-1  2  1
-
-2  3  2
+-------------
+| 2 | 3 | 2 |
+-------------
+| 1 | 2 | 1 |
+-------------
+| 2 | 3 | 2 |
+-------------
 ```
 
 The next phase applies the rules of Life to determine which cells live and die in the next generation. **Here's an important point: neighbor counting for every cell must be complete *before* deciding which cells live and die in the next generation**.
@@ -80,11 +96,13 @@ By the rules,
 Take a moment to verify the reasoning for each cell in the grid. When you're done, you should be certain that the state of the grid in the next generation is:
 
 ```
-0  1  0
-
-0  1  0
-
-0  1  0
+-------------
+| 0 | 1 | 0 |
+-------------
+| 0 | 1 | 0 |
+-------------
+| 0 | 1 | 0 |
+-------------
 ```
 
 Repeating the steps will show that this grid will return to the original horizontal line configuation in its next generation. This simple pattern, alternating between horizontal
@@ -94,9 +112,11 @@ and vertical, is called a **blinker**. There are a number of other standard Life
 
 ## Code
 
-The project repo contains two files: `RunLife.java` and `StdDraw.java`. These classes contain code to test your Life implementation. Don't modify them!
+This directory contains three files: `Life.java`, `RunLife.java` and `StdDraw.java`.
 
-You will write a class called `Life` (in a file named `Life.java`) that implements the following:
+`RunLife` contains code to test your implementation. Don't modify it! `StdDraw` handles the graphics. You don't need to write any graphical code for this project.
+
+Your job is to finish `Life.java` and implement the following methods:
 
 - `private boolean[][] grid`: holds the current state of the Life universe. An entry in the grid is `true` if its corresponding cell is alive and `false` otherwise.
 - `public Life(int nRows, int nCols)`: constructor. Initializes the `grid` to the given dimensions.
@@ -108,17 +128,47 @@ You will write a class called `Life` (in a file named `Life.java`) that implemen
 - `public int numCols()`: return the number of columns in the grid
 - `public void update()`: use the rules of Life to compute the next state of the `grid`.
 
-To test your class, run `RunLife`, which will instantiate a copy of your `Life` class and use it to run and display four popular Life patterns. The `StdDraw` class handles the graphics. **You don't need to write any graphics code for this project**.
+## Easy Methods
+
+Most of the methods in `Life` are easy to implement. For example, the constructor only needs to initialize the `grid` to the given sizes:
+
+```
+public Life(int nRows, int nCols) {
+    this.grid = new boolean[nRows][nCols];
+}
+```
+
+`isAlive` returns the value of a cell at a given position:
+
+```
+public boolean isAlive(int r, int c) {
+    return this.grid[r][c];
+}
+
+```
+
+`numRows` returns the number of rows in the grid. `numCols` is very similar.
+
+```
+public int numRows() {
+    return this.grid.length;
+}
+```
+
+**Start by implementing the easy methods other than `update`**, then run `RunLife` to verify that you can display each of the four patterns.
+
+## `update`
+
+The `update` method is the most complex. First, make sure that you understand the rules of Life described above. Play with the example page and work through the blinker example.
+It will be impossible to code the `update` method if you can't simulate it by hand.
+
+
 
 ## Tips
-Most of the methods are straightforward. Start by writing everything other than `update` and verifying that you can run the test class and display the initial configurations of each pattern.
+Most of the methods are straightforward. 
 
 The `update` method is the most complex part of the project. It needs to check every cell in the grid, determine that cell’s number of living neighbors, then use the number of neighbors to determine whether the cell lives or dies in the next generation.
 
 Remember that all births and deaths happen **simultaneously**. Don’t modify the grid while you’re checking to see if cells should live or die! Create a second `boolean[][]` called `next` to hold the state of each cell in the next generation. As you check each cell in the current grid, set its corresponding value in `next` to be alive or dead. At the end of `update` set `this.grid = next`.
 
 You assume that any cells that lie outside the grid are permanently dead. You'll need to think about how to handle the top and bottom rows and the left and right columns.
-
-## Submission and Grading
-
-Turn in your repo to GitHub. I'll download your project and use the `main` method of `RunLife` to test it. If your program handles every case correctly, you'll get full credit. You must have at least three of the four patterns working to receive satisfactory credit.
