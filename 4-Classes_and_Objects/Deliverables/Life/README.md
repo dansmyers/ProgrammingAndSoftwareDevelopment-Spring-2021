@@ -1,6 +1,6 @@
 # Conway's Game of Life
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" width="50%" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" width="33%" />
 
 
 ## Description
