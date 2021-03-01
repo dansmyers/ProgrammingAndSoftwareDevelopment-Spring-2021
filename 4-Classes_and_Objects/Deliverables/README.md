@@ -51,7 +51,7 @@ You will receive one point for each of the following features:
 - Dealing and printing two cards for the player's hand; dealing two cards and printing **one** card for the dealer's hand
 - Implementing the `score` method of the `Hand` class
 - Correctly implementing hit and stand behaviors for the player
-- Busting and ending the game if the player's score goes over 21
 - Using a loop to make the dealer hit until his score is greater than or equal to 17
+- Ending the game immediately if the player or dealer score goes over 21
 - Comparing the player and dealer scores and choosing the winner
 
