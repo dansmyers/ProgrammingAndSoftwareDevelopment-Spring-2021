@@ -25,8 +25,8 @@ All births and deaths happen **simultaneously**.
 
 <img src="http://cis-linux2.temple.edu:8080/SP18_3344_tuh35975/02_advLayout/images/life_rules.gif" width="40%" />
 
-*Graphic from [Brandon Foltz's page at Temple](http://cis-linux2.temple.edu:8080/SP18_3344_tuh35975/02_advLayout/index.html#info)*. Notice that the two red cells marked in the
-last figure come to life at the same time in the next generation because they each have three living blue neighbors in the current generation.
+*Graphic from [Brandon Foltz's page at Temple](http://cis-linux2.temple.edu:8080/SP18_3344_tuh35975/02_advLayout/index.html#info). Notice that the two red cells marked in the
+last figure come to life at the same time in the next generation because they each have three living blue neighbors in the current generation.*
 
 ## Play Around
 
