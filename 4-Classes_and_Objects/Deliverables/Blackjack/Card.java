@@ -2,7 +2,7 @@
  * Create a class that represents a single playing card
  * Combine with a Deck class to represent a full deck of 52 cards
  * 
- * @author dmyers
+ * @author CMS 121
  *
  */
 
