@@ -30,17 +30,14 @@ last figure come to life at the same time in the next generation because they ea
 
 ## Play Around
 
-Go to the following page, which is a web-based implementation of Life:
+First, watch this video: https://www.youtube.com/watch?v=C2vgICfQawE.
 
-https://playgameoflife.com/lexicon/bi-block_puffer
+Then go to the following page, which is a web-based implementation of Life: https://playgameoflife.com/lexicon/bi-block_puffer
 
 - Click on *Explanation* for a review of the rules.
-
 - *Lexicon* contains an extensive collection of patterns and terms developed by the Life community. You can click on any pattern graphic to load it into the window.
-
 - Use the controls at the bottom of the page to change the speed or zoom in and out on the pattern. Many of the spaceship patterns, like the bi-block puffe above, look best
 if you run them relatively fast and zoomed out.
-
 - You can also draw on the window to add new cells, then run the program to see how your configuration evolves.
 
 ## Detailed Example
