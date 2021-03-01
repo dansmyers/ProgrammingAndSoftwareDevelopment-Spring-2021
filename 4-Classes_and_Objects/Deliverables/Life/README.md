@@ -23,7 +23,7 @@ The universe of Life is an infinite two-dimensional grid of cells. At each momen
 
 All births and deaths happen **simultaneously**.
 
-<img src="http://33.media.tumblr.com/tumblr_ky8qn3m5dm1qav3uso1_500.gif" width="50%" />
+<img src="http://33.media.tumblr.com/tumblr_ky8qn3m5dm1qav3uso1_500.gif" width="70%" />
 
 ## Example
 
