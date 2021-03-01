@@ -24,6 +24,14 @@ in class.
 
 ## Grading
 
+The complete assignment is worth a total of **ten points**.
+
+### Life
+
+<img src="https://external-preview.redd.it/U38P67RJ7qavOCX3MDmFRoIN1Ht5WXK_O4-zm8IwSpc.jpg?auto=webp&s=002ab4f1c7de99b320f3968b3d8e671b0abf7a50" width="35%" />
+
+*Some people take this stuff really seriously.*
+
 The `Life` project includes a driver class named `RunLife` that implements four automated patterns. You'll get one point for each pattern that your code successfully executes
 
 - A simple three-square blinker that alternates between vertical and horizontal
@@ -32,7 +40,18 @@ The `Life` project includes a driver class named `RunLife` that implements four 
 
 - A more complex flashing pattern
 
-- **Gosper's Glider Gun**, a pattern that produces an infinite stream of gliders. Named after Bill Gosper, who discovered it in 1970. The discovery of the Gun answered a challenge
-from John Conway to find a pattern that could produce an infinite number of living cells and won Gosper a prize of $50.
+- **Gosper's Glider Gun**, a pattern that produces an infinite stream of gliders. The Gun is named after Bill Gosper, who created it in 1970, winning $50 from 
+John Conway for discovering the first Life pattern that could produce an infinite number of living cells.
 
-<img src="https://external-preview.redd.it/U38P67RJ7qavOCX3MDmFRoIN1Ht5WXK_O4-zm8IwSpc.jpg?auto=webp&s=002ab4f1c7de99b320f3968b3d8e671b0abf7a50" width="35%" />
+
+### Blackjack
+
+You will receive one point for each of the following features:
+
+- Dealing and printing two cards for the player's hand; dealing two cards and printing **one** card for the dealer's hand
+- Implementing the `score` method of the `Hand` class
+- Correctly implementing hit and stand behaviors for the player
+- Busting and ending the game if the player's score goes over 21
+- Using a loop to make the dealer hit until his score is greater than or equal to 17
+- Comparing the player and dealer scores and choosing the winner
+
