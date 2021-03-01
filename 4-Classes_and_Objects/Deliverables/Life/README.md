@@ -5,7 +5,7 @@
 
 ## Description
 
-**Life**, invented by the mathematician John Conway in 1970, is a zero-player game that simulates the evolution of a collection of cells. It is the best-known example of a **cellular automaton** and has attracted interest from computer scientists and mathematician because it is capable of generating complex patterns from a short set of rules. In this project, you’ll write a Java class that implements the rules of the Game of Life.
+**Life**, invented by the mathematician John Conway in 1970, is a zero-player game that simulates the evolution of a collection of cells. It is the best-known example of a **cellular automaton** and has attracted interest from computer scientists and mathematicians because it's capable of generating complex patterns from a short set of rules. In this project, you’ll write a Java class that implements the rules of the Game of Life.
 
 Conway was a professor of mathematics at Cambridge. He had a long academic research career but is best known for his contributions
 to recreational mathematics, including Life and [the Doomsday Rule](https://en.wikipedia.org/wiki/Doomsday_rule) for calculating the day of the week for a given date. Conway died of COVID-19 on April 11, 2020. 
