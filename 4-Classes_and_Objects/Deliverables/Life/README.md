@@ -163,6 +163,47 @@ public int numRows() {
 The `update` method is the most complex. First, make sure that you understand the rules of Life described above. Play with the example page and work through the blinker example.
 It will be impossible to code the `update` method if you can't simulate it by hand.
 
+The goal of update is to process each square in the grid, counting up its number of neighbors and then deciding if the square should be alive or dead in the next generation.
+
+```
+public void update() {
+
+    // Create a second grid to hold the state in the next generation
+    boolean[][] next = new boolean[this.numRows()][this.numCols];
+    
+    // Loop over all elements in the grid
+    for (int r = 0; r < this.numRows(); r++) {
+        for (int c = 0; c < this.numCols(); c++) {
+            
+            // Count the living neighbors of position (r, c)
+            int neighbors = 0;
+            
+            // Upper-left neighbor
+            if (r > 0 && c > 0 && this.grid[r - 1][c - 1]) {
+                neighbors++:
+            }
+            
+            // Upper-middle neighbor
+            if (r > 0 && this.grid[r - 1][c]) {
+                neighbors++;
+            }
+            
+            // Add cases for the other six neighbors
+        
+        
+            // Use the rules of life to determine whether position (r, c)
+            // is alive or dead in the next generation
+            //
+            // Set next[r][c] to true or false
+            
+        }    
+    }
+    
+    // Make the next grid the active grid for the next generation
+    this.grid = next;
+
+}
+```
 
 
 ## Tips
