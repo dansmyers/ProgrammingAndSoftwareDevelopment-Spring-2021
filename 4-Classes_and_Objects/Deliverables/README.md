@@ -1,21 +1,3 @@
-# Class and Objects &ndash; Deliverables
-
-This project will ask you to complete two programs that use object-oriented programming concepts
-
-- An implementation of John Conway's Game of Life, an **artificial life** program that simulates births and deaths among groups of cells living on 
-a 2-D rectangular grid. Life is famous for the intricate patterns that it's capable of creating.
-
-- Blackjack, implemented in a OOP style using classes to represent the cards, the deck, and the player's and dealer's hands. This is a classic project and illustrates how
-OOP provides useful features for **modeling the elements of a program**.
-
-These projects are both likely to be **more challenging that anything you have written thus far**. You **must** take the time to understand the requirements and structure for 
-each program before you begin coding. Remember to **develop incrementally and test your code frequently**.
-
-
-## Conway's Life
-
-
-
 # Blackjack
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Blackjack21.jpg" width="50%" />
