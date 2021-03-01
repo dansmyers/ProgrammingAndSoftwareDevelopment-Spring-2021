@@ -1,7 +1,7 @@
 /**
  * A deck of 52 playing cards
  * 
- * @author dmyers
+ * @author CMS 121
  *
  */
  
