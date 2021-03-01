@@ -5,11 +5,8 @@
  *
  */
  
-
-// To get access to ArrayList, you must import it from java.util
 import java.util.ArrayList;
 import java.util.Collections;
-
 
 public class Deck {
 
