@@ -153,6 +153,7 @@ public class Blackjack {
         player.addCard(deck.deal());
         player.addCard(deck.deal());
         
+        
         // Deal two cards to the dealer
         
         
@@ -162,6 +163,13 @@ public class Blackjack {
         
         // Print the dealer's first card
         // Again, think about adding a method to Hand to print only the first card
+        
+        
+        // Calculate the score of the player's hand
+        // If score == 21, it's a Blackjack and the player wins immediately
+        if (player.score() == 21) {
+            // Print Blackjack message and return to end the program
+        }
         
         
         // Use a loop to prompt the player to hit or stand
