@@ -132,7 +132,7 @@ Your job is to finish `Life.java` and implement the following methods:
 
 ## Easy Methods
 
-Most of the methods in `Life` are easy to implement. For example, the constructor only needs to initialize the `grid` to the given sizes:
+Most of `Life.java`'s methods are easy to implement. For example, the constructor only needs to initialize the `grid` to the given sizes:
 
 ```
 public Life(int nRows, int nCols) {
