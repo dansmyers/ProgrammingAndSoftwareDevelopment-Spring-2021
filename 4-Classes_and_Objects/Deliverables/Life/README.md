@@ -23,7 +23,7 @@ The universe of Life is an infinite two-dimensional grid of cells. At each momen
 
 All births and deaths happen **simultaneously**.
 
-<img src="http://cis-linux2.temple.edu:8080/SP18_3344_tuh35975/02_advLayout/images/life_rules.gif" width="50%" />
+<img src="http://cis-linux2.temple.edu:8080/SP18_3344_tuh35975/02_advLayout/images/life_rules.gif" width="40%" />
 
 *Graphic from [Brandon Foltz's page at Temple](http://cis-linux2.temple.edu:8080/SP18_3344_tuh35975/02_advLayout/index.html#info)*. Notice that the two red cells marked in the
 last figure come to life at the same time in the next generation because they each have three living blue neighbors in the current generation.
@@ -109,7 +109,7 @@ Take a moment to verify the reasoning for each cell in the grid. When you're don
 Repeating the steps will show that this grid will return to the original horizontal line configuation in its next generation. This simple pattern, alternating between horizontal
 and vertical, is called a **blinker**. There are a number of other standard Life patterns, which often emerge spontaneously from more complex configurations.
 
-<img src="https://evolvingweb.ca/sites/default/files/inline-images/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3456565a547654717a5252304255774e49482f67697068792e676966.gif" width="50%" />
+<img src="https://evolvingweb.ca/sites/default/files/inline-images/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3456565a547654717a5252304255774e49482f67697068792e676966.gif" width="66%" />
 
 ## Code
 
