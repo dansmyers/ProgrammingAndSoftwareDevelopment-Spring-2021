@@ -78,7 +78,8 @@ Updates to the other cells are similar. If you want to represent the number of l
 -------------
 ```
 
-The next phase applies the rules of Life to determine which cells live and die in the next generation. **Here's an important point: neighbor counting for every cell must be complete *before* deciding which cells live and die in the next generation**.
+The next phase applies the rules of Life to determine which cells live and die in the next generation. **Remember that births and deaths happen *simultaneously***, so if we
+determine that a cell should come to life or die in the next generation, that decision has no effect on the neigbor counts for the current generation.
 
 By the rules,
 
@@ -106,10 +107,10 @@ Take a moment to verify the reasoning for each cell in the grid. When you're don
 -------------
 ```
 
-Repeating the steps will show that this grid will return to the original horizontal line configuation in its next generation. This simple pattern, alternating between horizontal
-and vertical, is called a **blinker**. There are a number of other standard Life patterns, which often emerge spontaneously from more complex configurations.
+Repeating the steps will show that this grid will return to the original horizontal line configuation in its next generation. This simple three-cell pattern, alternating between 
+horizontal and vertical, is called a **blinker**. There are a number of other standard Life patterns, which often emerge spontaneously from more complex configurations.
 
-<img src="https://evolvingweb.ca/sites/default/files/inline-images/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3456565a547654717a5252304255774e49482f67697068792e676966.gif" width="66%" />
+<img src="https://evolvingweb.ca/sites/default/files/inline-images/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3456565a547654717a5252304255774e49482f67697068792e676966.gif" width="60%" />
 
 ## Code
 
