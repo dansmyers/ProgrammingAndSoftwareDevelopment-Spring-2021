@@ -205,12 +205,4 @@ public void update() {
 }
 ```
 
-
-## Tips
-Most of the methods are straightforward. 
-
-The `update` method is the most complex part of the project. It needs to check every cell in the grid, determine that cell’s number of living neighbors, then use the number of neighbors to determine whether the cell lives or dies in the next generation.
-
 Remember that all births and deaths happen **simultaneously**. Don’t modify the grid while you’re checking to see if cells should live or die! Create a second `boolean[][]` called `next` to hold the state of each cell in the next generation. As you check each cell in the current grid, set its corresponding value in `next` to be alive or dead. At the end of `update` set `this.grid = next`.
-
-You assume that any cells that lie outside the grid are permanently dead. You'll need to think about how to handle the top and bottom rows and the left and right columns.
