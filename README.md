@@ -150,7 +150,7 @@ Note that there is **no partial credit**: You will always receive either **full 
 
 1. Earn at least 90% of the total points from homework and quiz questions over the course of the semester.
 
-2. Complete a satsifactory final programming project.
+2. Complete a satisfactory final programming project.
 
 3. Complete the participation questions for each assigned chapter in the ZyBook.
 
