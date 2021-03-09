@@ -73,7 +73,7 @@ We will use [Eclipse](https://www.eclipse.org/) for our programming assignments 
 |March 2|        Writing classes that have data ||
 |March 4|        Writing classes that have methods |Quiz 3|
 |March 9|        Class writing practice ||
-|March 11|      Working with files + Dealing with exceptions |Assignment 4 due|
+|March 11|      Working with files + Dealing with exceptions |Assignment 4 due Sunday, March 14|
 |March 16|      Break (no class)||
 |March 18|      Java data structures: `ArrayList` and its implementation |Quiz 4|
 |March 23|      Java data structures: `HashMap` ||
