@@ -20,6 +20,12 @@ Like our other object-oriented programming projects, no individual part will be 
 different parts fit together to accomplish the overall goal of spellchecking 
 
 
+## Submission
+
+Submit your code an assignment that I'll create on Canvas. To get satisfactory credit for the project, implement all of the methods described below and return correct 
+spellchecking output for the examples given in the `main` of the `Spellchecker` starter code that I've provided.
+
+
 ## The `Spellchecker` Class
 
 ### Methods
