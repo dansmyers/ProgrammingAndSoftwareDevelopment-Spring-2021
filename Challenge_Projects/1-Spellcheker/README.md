@@ -3,7 +3,7 @@
 ## Description
 
 In this project, you'll use `ArrayList` and file operations to implement a spelling checker tool. On creation, the checker will open a large list of common
-English words and construct a `HashSet` to store them. The checker can then search the tree to determine if it contains a given input word; if not, the word is either
+English words and construct a `HashSet` to store them. The checker can then search the set to determine if it contains a given input word; if not, the word is either
 uncommon or misspelled. For additional fun, your checker will support a method to suggest possible corrections to misspelled words.
 
 This project will allow you to practice the following:
