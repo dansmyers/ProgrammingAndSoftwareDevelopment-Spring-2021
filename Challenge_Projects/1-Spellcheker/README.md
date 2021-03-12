@@ -34,7 +34,7 @@ Implement a class called `Spellchecker` that provides the following methods:
 
 - `public Spellchecker(String wordFile)`: constructor that opens the given word file and builds a `HashSet` of the words it contains
 
-- `public boolean search(String searchWord)`: search the tree for the given input word; return `true` if it is present and `false` otherwise
+- `public boolean search(String searchWord)`: search the set for the given input word; return `true` if it is present and `false` otherwise
 
 - `public ArrayList<String> suggestions(String word)`: return a list of words that could be correct alternatives for the given input word
 
