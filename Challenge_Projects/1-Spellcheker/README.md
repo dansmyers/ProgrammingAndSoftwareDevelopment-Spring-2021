@@ -21,7 +21,7 @@ This project will allow you to practice the following:
 
 ### Methods
 
-Implement a class called Spellchecker that provides the following methods:
+Implement a class called `Spellchecker` that provides the following methods:
 
 - `public Spellchecker(String wordFile)`: constructor that opens the given word file and builds a binary search tree of the words it contains
 
@@ -33,7 +33,7 @@ Implement a class called Spellchecker that provides the following methods:
 
 ### Starter Code
 
-The code below is included in `Spellchecker.java` for you to use as a starting point.
+The code below is included in `Spellchecker.java` for you to use as a starting point. Use the given `main` to test your program.
 
 ```
 /**
@@ -85,7 +85,12 @@ public class Spellchecker {
      * @param    searchWord
      */
     public boolean search(String searchWord) {
-        // Use the contains method of HashSet to check if this.words contains searchWord
+        
+        // Convert to lowercase
+        String lower = searchWord.toLowerCase()
+    
+        // Use the contains method of HashSet to check if this.words contains lower
+        
     }
     
     
@@ -178,7 +183,10 @@ public class Spellchecker {
 }
 ```
 
-## `HashSet`
+## Tips
+
+
+### `HashSet`
 
 `HashSet` is a built-in Java class used to represent a **set** of objects. Recall that a mathematical set is defined to be an **unordered collection**. 
 Like `HashMap`, `HashSet` is designed to perform quick lookups: It's easy to check if a given word is contained in the set.
@@ -191,8 +199,41 @@ import java.util.HashSet;
 
 at the top of the class.
 
-`HashSet` supports two basic methods: `add`, to put a new item into the set, and `contains`, to check if the set contains a given item. Look at the examples below.
+`HashSet` supports two basic methods: `add`, to put a new item into the set, and `contains`, to check if the set contains a given item. Take a look at [the official
+Java documentation for `HashSet`](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html) for more information on how to use them.
 
-## Tips
 
+### Constructor
+
+The code for the constructor is similar to our other file reading programs: use a `try`-`catch` block to open the file, iterate through its lines, and do something with
+each one. In this case, you want to `add` each word in the file to `this.words` to build the valid set for the spellchecker to use later.
+
+### `search`
+
+This method is short. Look up the `contains` method of `HashSet` in the documentation and use it to test if the given word is in `this.words`.
+
+### `suggestions`
+
+This is by far the most challenging part of the project. Study the code that I've already given you carefully and use it to help write the two missing parts.
+
+`suggestions` returns an `ArrayList<String>` containing possible corrections to its input `String`. In your implementation, the corrections that are returned will be the words in the set that have an **edit distance** of 1 from the input word. An edit is one of the following operations:
+
+- Inserting a new character into the word, including a new character at the beginning or end. For example, `best` could become `beast` or `bests`, among other options.
+
+- Substituting one character of the word with another character. For example, `cat` could become `tat`, `cut`, or `car`, among many other possibilities.
+
+- Deleting one character from the word. For example, `chain` could become `chin` or `chai`.
+
+Therefore, your `suggestions` method can work by taking the input word, generating all possible `String`s that have an edit distance of 1, and returning the subset of those that exist in the valid word set.
+
+I've given you code to generate all of the possible substitutions. Look at it carefully and use it as a starting point for generating the deletions and insertions, which 
+you can do with only a few modifications.
+
+### `spellcheck`
+
+This method uses the technique of creating a `Scanner` to break a `String` into its individual whitespace-delimited words. Use `search` to check if each word is in the
+valid set. If it is not, use `suggestions` to get the list of potential alternate words.
+
+Note: You don't need to do anything to process the suggestions or choose the "best" suggestion. Just print the possibly misspelled word and then the list of suggestions.
+You should be able to verify that the suggestions are all one edit away from the starting word.
 
