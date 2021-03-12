@@ -39,7 +39,7 @@ The code below is included in `Spellchecker.java` for you to use as a starting p
 /**
  * Spellchecker
  *
- * CMS 120
+ * CMS 121
  */
  
 import java.util.HashSet;
