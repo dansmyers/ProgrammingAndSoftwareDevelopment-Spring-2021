@@ -10,11 +10,14 @@ This project will allow you to practice the following:
 
 - Working with files.
 
-- Using the documentation to work with a bulit-in class.
+- Using the documentation to work with a bulit-in Java class.
 
 - Looping over strings and performing string operations.
 
 - Using `Scanner` to parse the contents of a `String`.
+
+Like our other object-oriented programming projects, no individual part will be that complicated. Most of the challenge of this project is in understanding how the
+different parts fit together to accomplish the overall goal of spellchecking 
 
 
 ## The `Spellchecker` Class
