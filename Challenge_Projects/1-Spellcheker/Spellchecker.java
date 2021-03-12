@@ -5,6 +5,7 @@
  */
  
 import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -49,7 +50,7 @@ public class Spellchecker {
     public boolean search(String searchWord) {
         
         // Convert to lowercase
-        String lower = searchWord.toLowerCase()
+        String lower = searchWord.toLowerCase();
     
         // Use the contains method of HashSet to check if this.words contains lower
         
@@ -93,7 +94,7 @@ public class Spellchecker {
         
         
         // Return the final list of possible alternate words
-        return alternates
+        return alternates;
     }
     
     
