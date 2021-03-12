@@ -32,7 +32,7 @@ spellchecking output for the examples given in the `main` of the `Spellchecker` 
 
 Implement a class called `Spellchecker` that provides the following methods:
 
-- `public Spellchecker(String wordFile)`: constructor that opens the given word file and builds a binary search tree of the words it contains
+- `public Spellchecker(String wordFile)`: constructor that opens the given word file and builds a `HashSet` of the words it contains
 
 - `public boolean search(String searchWord)`: search the tree for the given input word; return `true` if it is present and `false` otherwise
 
