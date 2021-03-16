@@ -7,7 +7,7 @@
 The following three problems ask you to implement non-trivial recursive methods. 
 
 **You must use `Recursion.java` in this directoy as a starting point for your solutions**: It contains stubs for the static methods you need to implement. 
-New for this project! **Automated testing**. The  `main` method of `RecursionPractice` contains a series of tests that will evaluate your static methods
+New for this project! **Automated testing**. The  `main` method of `Recursion.java` contains a series of tests that will evaluate your static methods
 for different inputs and report if they are producing the correct outputs.
 
 Each recursive method is worth one point. You'll get credit for each problem if you pass all of its tests.
