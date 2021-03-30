@@ -91,10 +91,10 @@ Pipes are a common tool in the Unix world: they allow you to chain small, simple
 
 **Creating the Page**  Let's make a basic web page. 
 
-First, `cd` to your `CMS_195` directory and make a new directory to hold the new files you're going to write:
+First, `cd` to your `CMS_121` directory and make a new directory to hold the new files you're going to write:
 
 ```
-cd CMS_195
+cd CMS_121
 mkdir Lab_1_Web_Page
 cd Lab_1_Web_Page
 ```
