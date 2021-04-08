@@ -411,7 +411,7 @@ The basic version just dumps the `ArrayList` of search locations to a `String`, 
         for (Location loc : results) {
             response += "<p>";
             response += loc.toString();
-            response += "</p>"
+            response += "</p>";
         }
         
         return response;
