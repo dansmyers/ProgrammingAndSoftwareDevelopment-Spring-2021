@@ -18,6 +18,8 @@ In this project, you're going to take your search engine and deploy it to Heroku
 
 Complete the steps below to deploy your app. At the end of the process you should have a complete version of the application running on a Heroku URL. Send me the URL and answers to the questions below on Slack. I'll check everything out and give you credit for this project.
 
+Successfully completing this project will raise your final grade by **one part of a letter** (e.g., from B to B+ or B+ to A-).
+
 ## Setup
 First, finish the search engine. You can contine to update your app after it's deployed to Heroku, but it will be easier if you have all of the funtionality in place before you complete the steps below. In particular, make sure that you can successfully build the project using `./mvnw clean package`.
 
