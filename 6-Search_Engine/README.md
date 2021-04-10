@@ -1,5 +1,7 @@
 # A Compleat Shakespearean Search Engine
 
+## Due Thursday, April 15 (or the next day if the 15th is Fox Day)
+
 
 ## *“Once more search with me.” - The Merry Wives of Windsor: IV, ii*
 
