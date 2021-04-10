@@ -41,10 +41,12 @@ heroku login -i
 
 There are multiple ways to deploy a Heroku application. We're going to take advantage of the fact that the search engine is already in a Git repo and use Heroku's support for Git-based deployment.
 
-Before proceeding, read the following articles and answer these questions about Git and version control systems.
+Before proceeding, read the following articles.
 
 - https://www.atlassian.com/git/tutorials/what-is-version-control
 - https://guides.github.com/introduction/git-handbook/ (The first three sections, up to and including "Basic Git Commands." You don't have to memorize the commands.)
+
+Now answer these questions about Git and version control systems.
 
 - What are three primary benefits of version control systems in general?
 - Name at least two other version control sytsems besides Git.
