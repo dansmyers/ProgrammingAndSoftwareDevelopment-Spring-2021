@@ -82,17 +82,17 @@ We will use [Eclipse](https://www.eclipse.org/) for our programming assignments 
 |April 1|        Spring Boot |Quiz 5 |
 |April 6|       Spring Boot II ||
 |April 8|      Fully operational search engine ||
-|April 13|      Project: A Music Recommendation Engine |Assignment 6 due|
-|April 15|      Recommendation engine II ||
+|April 13|      Project: A Music Recommendation Engine ||
+|April 15|      Recommendation engine II |Assignment 6 due|
 |April 20|      Recommendation engine III ||
 |April 22|      Recommendation engine IV ||
-|April 26| Last day of classes | All challenge projects due (no meeting)
+|April 27| Last day of classes | All challenge projects due (no meeting)
 
 
 ### Other Important Dates
 
 - First day of class: January 20
-- Last day of class: April 26
+- Last day of class: April 27
 - Break days: February 19 and March 16
 - Last day to drop the class: February 2
 - Last day to withdraw without penalty: April 2
