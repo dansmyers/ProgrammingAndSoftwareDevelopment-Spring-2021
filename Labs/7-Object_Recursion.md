@@ -89,6 +89,8 @@ class Person {
 
 Now repeat the same analysis on the version below, which has more people and adds a third version of the `infectAll` method. Again, explain in detail what will happen for each version of `infectAll`. There are no tricks or syntax errors in the program.
 
+Type your answers to this part in a document that you can upload to Canvas.
+
 ```
 public class ObjectRecursion {
   
