@@ -52,10 +52,10 @@ public class ObjectRecursion {
 
 
     // Main method
-    // Tries to infect everybody starting with John
+    // Tries to infect everybody starting with Ian
     public static void main(String[] args) {
         ObjectRecursion o = new ObjectRecrusion();
-        Person ian = o.getFYoungestPerson();
+        Person ian = o.getYoungestPerson();
         o.infectAll(ian);
     }
 }
@@ -142,10 +142,10 @@ public class ObjectRecursion {
 
 
     // Main method
-    // Tries to infect everybody starting with John
+    // Tries to infect everybody starting with Ian
     public static void main(String[] args) {
         ObjectRecursion o = new ObjectRecrusion();
-        Person ian = o.getFYoungestPerson();
+        Person ian = o.getYoungestPerson();
         o.infectAll(ian);
     }
 }
