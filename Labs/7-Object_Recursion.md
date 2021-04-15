@@ -1,14 +1,16 @@
 # Practice Using Objects with Recursion
 
-## Brothers Poking Each Other
+## Brothers Hugging Each Other
 
-Take a look at the program below. It defines a `Brother` object, representing one of my three sons. Sometimes, brothers like to hug each other, but if one brother is sick, the others might get sick too.
+Take a look at the program below. It defines a `Person` object, representing one of my three sons. Sometimes, brothers like to hug each other, but if one brother is sick the others might get sick too.
 
 - Ian, the youngest, likes to hug Will.
 - Will likes to hug Scott.
 - Scott doesn't like to hug anybody (this is truth).
 
-Suppose that Ian gets sick one day and decides to start a hug-a-thon. If Ian hugs Will, then Will might get sick. If Will continues and hugs Scott, then Scott will get sick.
+Suppose that Ian gets sick one day and decides to start a hug-a-thon. If Ian hugs Will, then Will might get sick. If Will continues and hugs Scott, then Scott will get sick. The class below defines two versions of the `infectAll` method, which is intended to model this process of infection transmission through affection.
+
+Study the code, then describe, **in detail**, what the two versions of `infectAll` will actually do to Scott, Will, and Ian. Note that I am not asking for a summary of the statements in the method, but a discussion of what will happen to the `People` defined by the program: who will get sick and in what order? Think carefully!
 
 ```
 public class ObjectRecursion {
@@ -84,6 +86,8 @@ class Person {
 
 
 ## More Hugs
+
+Now repeat the same analysis on the version below, which has more people and adds a third version of the `infectAll` method. Again, explain in detail what will happen for each version of `infectAll`. There are no tricks or syntax errors in the program.
 
 ```
 public class ObjectRecursion {
