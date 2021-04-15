@@ -28,7 +28,7 @@ public class ObjectRecursion {
         people[IAN] = new Person("Ian", people[WILL]); // Ian hugs Will
     }
 
-    // Return the first Person in the people array
+    // Return the last Person in the people array
     public Person getYoungestPerson() {
         return people[people.length - 1];
     }
@@ -111,7 +111,7 @@ public class ObjectRecursion {
         people[MOM] = new Person("Mom", people[DAD]); // Mom hugs Dad
     }
 
-    // Return the first Person in the people array
+    // Return the last Person in the people array
     public Person getYoungestPerson() {
         return people[people.length - 1];
     }
