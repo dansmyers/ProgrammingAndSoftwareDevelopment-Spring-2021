@@ -1,5 +1,7 @@
 # Finish the Playlist Generator Project
 
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c8/Carly_Rae_Jepsen_-_I_Really_Like_You.png" wdith="100%" />
+
 ## Move `.mvn` to your project directory
 
 The `.mvn` directory is a "hidden" directory used by the Maven build tool. Files and directories starting with `.` are considered hidden and won't be displayed by the shell when you do a regular `ls` command.
