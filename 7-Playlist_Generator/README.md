@@ -68,29 +68,30 @@ You need to modify the `/playlist` route so that the ids returned by the `Recomm
 Here is a template to help you get started. Look up the relevant `String` methods in the [official documentation](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) if you need help. In particular, look at using `substring` and `replace`.
 
 ```
-    @RequestMapping("/playlist")
-    public String playlist() {
-        HashSet<String> results = this.rec.randomWalk(30);
-        
-        // Generic template for created song iframes
-        // Notice the TRACK_ID placeholder in the src URL -- we'll replace this with the real track IDs
-        
-        String template = "<iframe src=\"https://open.spotify.com/embed/track/TRACK_ID\" width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media autoplay\"></iframe>";
-        
-        String response = "";
-        
-        // Loop over the Strings contained in results
-        
-            // Each result String has the form spotify:track:6Ln76fIfkdmL6UHbuYR756
-        
-            // Extract the alphanumeric code from the result String by stripping off "spotify:track:"
-        
-            // Use the template.replace method to create a new String that replaces TRACK_ID in the template string with the real track id
-            
-            // Append the complete String with the track id to results
-        
-        return response;
-    }
+@RequestMapping("/playlist")
+public String playlist() {
+    HashSet<String> results = this.rec.randomWalk(30);
+
+    // Generic template for created song iframes
+    // Notice the TRACK_ID placeholder in the src URL -- we'll replace this with the real track IDs
+
+    String template = "<iframe src=\"https://open.spotify.com/embed/track/TRACK_ID\" width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media autoplay\"></iframe>";
+
+    String response = "";
+
+    // Loop over the Strings contained in results
+
+        // Each result String has the form spotify:track:6Ln76fIfkdmL6UHbuYR756
+
+        // Extract the alphanumeric code from the result String by stripping off "spotify:track:"
+
+        // Use the template.replace method to create a new String that replaces TRACK_ID in the template
+        // string with the real track id
+
+        // Append the complete String with the track id to response
+
+    return response;
+}
 
 ```
 
