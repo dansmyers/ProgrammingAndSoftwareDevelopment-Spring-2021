@@ -103,6 +103,33 @@ public String playlist() {
 
 Rebuild and run the application. Now you should see your customized page filled with embedded players for the tracks on your list!
 
+## Improvement
+
+Take a look at the output produced by your generator. Does it seem good? Could you think of a way to improve it?
+
+Here's a common problem: many playlists have lots of individual songs by a large number of artists, but those songs mostly don't appear on the other playlists in your dataset. For example, in my 90s and 00s boy bands example, there is one playlist of "90s summer hits" that includes a lot of popular songs that only appear on that one list but not on any others.
+
+A playlist with lots of unique tracks functions as a "sink" in the random walk process &ndash; given enough time, the walk is likely to get stuck on the playlist and bounce around among its tracks but never escape back to other playlists. In practice, this often leads to randomized playlists made up mostly of one-off songs by artists that are removed from the original artists contained in your starting playlist.
+
+To correct for this behavior, you can randomly reset back to the starting playlist. Periodic resets keep the process from wandering too far from the starting source, while still given it a chance to find interesting items. Modify your `randomWalk` method to use the following strategy:
+
+```
+for (int i = 0; i < 100; i++) {
+    // Choose a track from the current playlist
+    nextTrack = this.playlists.get(pl).randomTrack();
+
+    // Choose a playlist that contains the track
+    pl = this.tracks.get(nextTrack).randomPlaylist();
+    
+    // Generate a random number in [0, 1.0)
+    
+    // With a 1% probability, reset pl to the starting playlist
+}
+```
+
+Experiment with this change. You can also try different parameters for the length of the walk and the reset probability.
+
+
 ## Submission
 
 Zip your entire project directory, download the zip, and then submit it to Canvas.
