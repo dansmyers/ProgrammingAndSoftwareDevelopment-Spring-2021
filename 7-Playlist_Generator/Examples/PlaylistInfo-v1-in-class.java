@@ -14,7 +14,7 @@ public class PlaylistInfo {
 	private ArrayList<String> tracks;  // List of track IDs for this playlist
 	
 	
-	public PlaylistInfo(String id, String title) {
+	public PlaylistInfo(String id) {
 		this.id = id;
 		this.tracks = new ArrayList<String>();
 	}
