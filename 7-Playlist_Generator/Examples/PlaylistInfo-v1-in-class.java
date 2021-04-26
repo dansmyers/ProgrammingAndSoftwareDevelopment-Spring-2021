@@ -21,7 +21,7 @@ public class PlaylistInfo {
 	
 	
 	public String getTitle() {
-	    return this.title;
+	    return this.id;
 	}
 		
 	
